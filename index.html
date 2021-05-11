@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>flex box lauout</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+
+box-sizing: border-box;
+
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+
+background-color:lightblue;
+
+padding: 30px;
+
+text-align: center;
+
+font-size: 35px;
+
+color: white;
+
+}
+
+nav {
+
+float: left;
+
+background: #ccc;
+
+padding: 20px;
+
+}
+
+article {
+
+float: left;
+
+padding: 20px;
+
+width: 70%;
+
+background-color: #f1f1f1;
+
+height: 300px;
+
+}
+
+section::after {
+
+content: "";
+
+display: table;
+
+clear: both;
+
+}
+
+footer {
+
+background-color:black;
+
+padding: 10px;
+
+}
+
+@media screen only and (max-width: 600px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+@media screen only and (max-width: 1023px min-width:768) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+@media screen only and(max-width: 767px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="download.jpg" width="1000" height="200">
+
+</header>
+
+<section>
+
+<nav>
+
+<ul>
+
+<img src="imgages.jpg" width="100" height="600">
+
+</ul>
+
+</nav>
+
+<article>
+
+<h1>London</h1>
+
+<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
+<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+</article>
+
+</section>
+
+<footer>
+
+<p>Footer</p>
+
+</footer>
+
+</body>
+
+</html>
